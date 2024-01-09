@@ -16,6 +16,7 @@ public class Git {
         Period periodo = Period.between(fecha, ahora);
         
         System.out.println("------------------------------------------");
+        System.out.println("Linea dos ----------------------------");
         
         System.out.println("Dias: " + periodo.getDays());
         System.out.println("Meses: " + periodo.getMonths());
