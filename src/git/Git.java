@@ -11,13 +11,14 @@ public class Git {
         // Formato de fechas en java
         
         LocalDate fecha = LocalDate.of(2003, Month.JANUARY, 24);
-        LocalDate ahora = LocalDate.now();
+        LocalDate ahora = LocalDate.now(); 
         
         Period periodo = Period.between(fecha, ahora);
         
         System.out.println("------------------------------------------");
         System.out.println("Linea dos ----------------------------");
         System.out.println("Linea Tres ----------------------------");
+        System.out.println("Linea Cuatro ----------------------------");
         
         System.out.println("Dias: " + periodo.getDays());
         System.out.println("Meses: " + periodo.getMonths());
