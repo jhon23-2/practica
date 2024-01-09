@@ -11,7 +11,7 @@ public class Git {
         // Formato de fechas en java
         
         LocalDate fecha = LocalDate.of(2003, Month.JANUARY, 24);
-        LocalDate ahora = LocalDate.now();
+        LocalDate ahora = LocalDate.now(); 
         
         Period periodo = Period.between(fecha, ahora);
         
@@ -20,6 +20,11 @@ public class Git {
         System.out.println("Dias: " + periodo.getDays());
         System.out.println("Meses: " + periodo.getMonths());
         System.out.println("Anios: " + periodo.getYears());
+        
+    }
+
+    public boolean validarFecha(LocalDate fechaAvalidar , LocalDate before , LocalDate after){
+        return !fechaAvalidar.isBefore(before) && !fechaAvalidar.isAfter(after);
     }
 
 }
